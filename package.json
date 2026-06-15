@@ -1,0 +1,28 @@
+{
+  "name": "ai-engineering-harness",
+  "version": "0.1.0",
+  "description": "A lightweight TypeScript engineering scaffold for small AI-assisted software projects.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "verify": "npm run typecheck && npm run lint && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^4.1.9"
+  }
+}
