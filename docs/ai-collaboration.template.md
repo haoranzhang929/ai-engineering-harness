@@ -4,11 +4,13 @@
 
 Describe how AI assistance was used and where human review was applied.
 
+Use a curated summary. Do not paste raw chat transcripts.
+
 ## Interaction Summary
 
 | Step | Prompt Summary | AI Contribution | Human Decision |
-| --- | --- | --- | --- |
-|  |  |  |  |
+| ---- | -------------- | --------------- | -------------- |
+|      |                |                 |                |
 
 ## Accepted AI Suggestions
 

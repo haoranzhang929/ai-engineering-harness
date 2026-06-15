@@ -1,8 +1,12 @@
 # ai-engineering-harness
 
+[![Verify](https://github.com/haoranzhang929/ai-engineering-harness/actions/workflows/verify.yml/badge.svg)](https://github.com/haoranzhang929/ai-engineering-harness/actions/workflows/verify.yml)
+[![CodeQL](https://github.com/haoranzhang929/ai-engineering-harness/actions/workflows/codeql.yml/badge.svg)](https://github.com/haoranzhang929/ai-engineering-harness/actions/workflows/codeql.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 A lightweight TypeScript engineering scaffold for small AI-assisted software projects.
 
-This repository is designed to be used as a public GitHub template for prototypes, small tools, coding exercises, technical experiments, and general engineering workflows. It provides a minimal project structure, repeatable verification commands, and plain-language documentation templates for working with AI coding assistants while keeping ownership and review with the human engineer.
+This repository is designed to be used as a public GitHub template for prototypes, small tools, technical experiments, and general engineering workflows. It provides a minimal project structure, repeatable verification commands, and plain-language documentation templates for working with AI coding assistants while keeping ownership and review with the human engineer.
 
 ## Why This Exists
 
@@ -67,10 +71,10 @@ npm install
 npm run verify
 ```
 
-The verification command runs type checking, linting, tests, and a production build:
+The verification command runs type checking, linting, format checking, tests, and a production build:
 
 ```sh
-npm run typecheck && npm run lint && npm run test && npm run build
+npm run typecheck && npm run lint && npm run format:check && npm run test && npm run build
 ```
 
 Individual commands are also available:
@@ -80,6 +84,8 @@ npm run dev
 npm run test
 npm run test:watch
 npm run lint
+npm run format
+npm run format:check
 npm run typecheck
 npm run build
 ```
@@ -96,7 +102,7 @@ Recommended flow:
 4. Implement one narrow change at a time.
 5. Run verification locally.
 6. Review AI-assisted changes as human-owned code.
-7. Summarize useful AI assistance without storing raw private transcripts.
+7. Summarize useful AI assistance in curated notes without storing raw private transcripts.
 
 Use `AI_USAGE_TEMPLATE.md` or the templates in `ai-log/` when a change should disclose AI assistance.
 
@@ -118,7 +124,7 @@ Use the templates in `docs/` to keep project context lightweight and reviewable:
 
 ## Security and Privacy
 
-Do not commit secrets, tokens, credentials, `.env` files, private prompts, proprietary content, raw AI transcripts, or sensitive user data. Treat AI-generated content as untrusted until reviewed.
+Do not commit secrets, tokens, credentials, `.env` files, private prompts, proprietary content, raw AI transcripts, or sensitive user data. Prefer curated summaries over raw transcripts. Treat AI-generated content as untrusted until reviewed.
 
 If you find a vulnerability, follow `SECURITY.md` and avoid opening a public issue for sensitive details.
 

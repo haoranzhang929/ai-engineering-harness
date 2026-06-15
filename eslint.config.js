@@ -3,7 +3,7 @@ import tseslint from "typescript-eslint";
 
 export default tseslint.config(
   {
-    ignores: ["dist/**", "coverage/**", "node_modules/**"]
+    ignores: ["dist/**", "coverage/**", "node_modules/**"],
   },
   js.configs.recommended,
   ...tseslint.configs.strictTypeChecked,
@@ -12,16 +12,16 @@ export default tseslint.config(
     languageOptions: {
       parserOptions: {
         projectService: true,
-        tsconfigRootDir: import.meta.dirname
-      }
+        tsconfigRootDir: import.meta.dirname,
+      },
     },
     rules: {
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
-      "@typescript-eslint/no-inferrable-types": "off"
-    }
+      "@typescript-eslint/no-inferrable-types": "off",
+    },
   },
   {
     files: ["eslint.config.js"],
-    extends: [tseslint.configs.disableTypeChecked]
-  }
+    extends: [tseslint.configs.disableTypeChecked],
+  },
 );

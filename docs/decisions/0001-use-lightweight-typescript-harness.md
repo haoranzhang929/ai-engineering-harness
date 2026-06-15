@@ -8,7 +8,7 @@ Accepted
 
 Small AI-assisted engineering projects benefit from clear requirements, typed implementation, repeatable checks, and visible decisions. A heavy framework or custom agent system would add maintenance cost before there is a demonstrated need.
 
-The repository should work as a reusable public template for prototypes, small tools, coding exercises, technical experiments, and general workflows.
+The repository should work as a reusable public template for prototypes, small tools, technical experiments, and general workflows.
 
 ## Decision
 

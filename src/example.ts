@@ -15,7 +15,7 @@ export function normalizeRecords(records: readonly InputRecord[]): NormalizedRec
     .map((record) => ({
       id: record.id.trim(),
       label: normalizeLabel(record.label),
-      active: record.active ?? true
+      active: record.active ?? true,
     }))
     .filter((record) => record.id.length > 0);
 }

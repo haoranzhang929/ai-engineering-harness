@@ -10,6 +10,8 @@
 
 Describe the specific assistance provided, such as requirement analysis, implementation options, test suggestions, documentation review, or code review.
 
+Summarize the collaboration in curated form. Do not paste raw chat transcripts.
+
 ## Human Review Statement
 
 I reviewed the AI-assisted output and made the final decisions about implementation, validation, trade-offs, license compliance, and readiness.
@@ -25,4 +27,4 @@ I reviewed the AI-assisted output and made the final decisions about implementat
 
 ## Privacy and Sensitive Data Statement
 
-No secrets, credentials, private prompts, proprietary content, or sensitive data were intentionally shared with AI tools or committed to this repository.
+No secrets, credentials, private prompts, proprietary content, raw transcripts, or sensitive data were intentionally shared with AI tools or committed to this repository.

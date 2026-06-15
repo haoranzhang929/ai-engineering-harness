@@ -4,7 +4,7 @@ This is the primary instruction file for AI coding agents working in this reposi
 
 ## Project Purpose
 
-`ai-engineering-harness` is a lightweight TypeScript scaffold for small engineering projects that may use AI assistance. It is intended for prototypes, small tools, coding exercises, technical experiments, and general software engineering workflows.
+`ai-engineering-harness` is a lightweight TypeScript scaffold for small engineering projects that may use AI assistance. It is intended for prototypes, small tools, technical experiments, and general software engineering workflows.
 
 The repository should stay generic, minimal, readable, and suitable for use as a public GitHub template.
 
