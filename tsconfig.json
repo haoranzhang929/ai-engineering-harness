@@ -23,6 +23,12 @@
     "sourceMap": true,
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "tests/**/*.ts", "vitest.config.ts", "eslint.config.js"],
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts",
+    "examples/**/*.ts",
+    "vitest.config.ts",
+    "eslint.config.js"
+  ],
   "exclude": ["dist", "coverage", "node_modules"]
 }

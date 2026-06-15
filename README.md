@@ -29,6 +29,7 @@ The goal is to help a developer start with clear requirements, implement in smal
 ```text
 .
 ├── src/                    # Small TypeScript source files
+├── examples/               # Runnable examples for local exploration
 ├── tests/                  # Vitest tests
 ├── docs/                   # Workflow notes, templates, and decisions
 ├── prompts/                # Reusable AI prompt templates
@@ -46,8 +47,17 @@ Key files:
 ## Use as a Template
 
 1. Create a new repository from this template.
-2. Rename the package in `package.json` if needed.
-3. Replace the tiny example in `src/` and `tests/` with your project code.
+2. Rename the package for your project:
+
+   ```sh
+   npm pkg set name="your-project-name"
+   npm install
+   npm run verify
+   ```
+
+   `npm install` refreshes `package-lock.json` so the lockfile matches the renamed package metadata.
+
+3. Replace the tiny example in `src/`, `examples/`, and `tests/` with your project code.
 4. Capture project requirements in `docs/requirements.template.md` or a copy of it.
 5. Record assumptions, trade-offs, and AI collaboration notes as the work evolves.
 

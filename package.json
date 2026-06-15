@@ -5,12 +5,20 @@
   "type": "module",
   "private": true,
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haoranzhang929/ai-engineering-harness.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haoranzhang929/ai-engineering-harness/issues"
+  },
+  "homepage": "https://github.com/haoranzhang929/ai-engineering-harness#readme",
   "packageManager": "npm@11.5.2",
   "engines": {
     "node": ">=24"
   },
   "scripts": {
-    "dev": "tsx src/run-example.ts",
+    "dev": "tsx examples/run-example.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "eslint .",
