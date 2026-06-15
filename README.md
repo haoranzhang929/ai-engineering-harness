@@ -61,6 +61,8 @@ Key files:
 4. Capture project requirements in `docs/requirements.template.md` or a copy of it.
 5. Record assumptions, trade-offs, and AI collaboration notes as the work evolves.
 
+For existing repositories, use `starters/existing-project-harness.md` to retrofit workflow, documentation, and verification guardrails without replacing the project's stack.
+
 ## Install
 
 Use Node.js 24 and npm.
